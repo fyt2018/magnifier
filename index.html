@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        .same{
+            position: relative;
+            box-sizing: border-box;
+            float: left;
+            border:1px solid #ccc;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+        .same.samllBox{
+            width: 350px;
+            height: 350px;
+        }
+        .samllBox .moveBox{
+              position: absolute;
+              left: 0;
+              top:0;
+              box-sizing: border-box;
+              border:1px solid #ccc;
+              display: none;
+              background-color: rgba(230,20,100,0.5);
+        }
+        .same.bigBox{
+            width: 400px;
+            height: 400px;
+            display: none;
+            background: url("img/big.jpg");
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="same samllBox">
+       <div class="moveBox"></div>
+   </div>
+   <div class="same bigBox"></div>
+   <script src="./js/index.js"></script>
+</body>
+</html>
